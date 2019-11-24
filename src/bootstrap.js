@@ -1,6 +1,11 @@
 module.exports = async () => {
     const Tweet = require("./models/Tweet");
     const User = require("./models/User");
+
+    //Associate models
+    User.hasMany(Tweet,{as:"Tweets", foreignKey: "userId"});
+    Tweet.belongsTo(User, {as:"User", foreignKey: "userId"});
+
     //Custom Error Handler
     const errHandler = (err)=>{
         console.log("Error: ", err);
