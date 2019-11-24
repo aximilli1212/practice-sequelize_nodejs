@@ -10,6 +10,7 @@ module.exports = {
        primaryKey:true,
      },
      content: Sequelize.STRING(300),
+     userId: Sequelize.INTEGER(11),
      createdAt: Sequelize.DATE,
      updatedAt: Sequelize.DATE,
    });
