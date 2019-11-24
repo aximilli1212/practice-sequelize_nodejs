@@ -17,3 +17,7 @@ app.use(router);
 
 const rootPath = path.resolve("./dist");
 app.use(express.static(rootPath));
+
+require("./src/database/connection")
+
+router.use({err,req,res,next})
