@@ -1,0 +1,23 @@
+{
+  "name": "practice-sequelize_nodejs",
+  "version": "1.0.0",
+  "description": "NodeJS Sequelize Practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aximilli1212/practice-sequelize_nodejs.git"
+  },
+  "keywords": [
+    "Sequelize",
+    "nodeJS"
+  ],
+  "author": "Emmanuel Sackey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aximilli1212/practice-sequelize_nodejs/issues"
+  },
+  "homepage": "https://github.com/aximilli1212/practice-sequelize_nodejs#readme"
+}
