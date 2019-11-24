@@ -18,5 +18,6 @@ module.exports = async () => {
       include:[{model: Tweet, as: "Tweets"}]
   }).catch(errHandler)
 
+    console.log(usersAll);
 
 }

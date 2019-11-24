@@ -19,5 +19,17 @@ const rootPath = path.resolve("./dist");
 app.use(express.static(rootPath));
 
 require("./src/database/connection")
+require("./src/bootstrap");
 
-router.use({err,req,res,next})
+router.use((err,req,res,next)=>{
+    if(err){
+        return res.send(err.message);
+    }
+});
+
+app.listen(PORT, err=>{
+     if(err){
+        return console.log(`cannot listen on PORT: ${PORT}`);
+     }
+     console.log(`Server is Listening on : http://localhost:${PORT}/`);
+});
